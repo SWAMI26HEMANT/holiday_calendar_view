@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'calendar_grid.dart';
 import 'calendar_header.dart';
 import 'calendar_weekdays.dart';

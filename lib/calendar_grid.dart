@@ -60,7 +60,7 @@ class CalendarGrid extends StatelessWidget {
                 return GestureDetector(
                   onTap: () {
                     if (hasEvent) {
-                      _showEventPopup(context, date, [holiday!]);
+                      _showEventPopup(context, date, [holiday]);
                     }
                   },
                   child: Container(
