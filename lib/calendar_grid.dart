@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:holiday_calendar_view/helper.dart';
 import 'package:intl/intl.dart';
 
 import 'holiday.dart';
@@ -69,7 +70,7 @@ class CalendarGrid extends StatelessWidget {
                       borderRadius: BorderRadius.circular(6),
                       border: Border.all(
                         color: DateUtils.isSameDay(date, DateTime.now())
-                            ? Colors.deepPurple.withOpacity(0.4)
+                            ? Colors.deepPurple.withFixedOpacity(0.4)
                             : Colors.transparent,
                       ),
                     ),
@@ -130,7 +131,7 @@ class CalendarGrid extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.all(4),
               margin: const EdgeInsets.only(bottom: 12),
-              color: Colors.deepPurple.withOpacity(0.1),
+              color: Colors.deepPurple.withFixedOpacity(0.1),
               child: Text(
                 event.name,
                 style: const TextStyle(

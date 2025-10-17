@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:holiday_calendar_view/helper.dart';
 import 'package:intl/intl.dart';
 
 class CalendarHeader extends StatefulWidget {
@@ -70,7 +71,7 @@ class _CalendarHeaderState extends State<CalendarHeader> {
                         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                         decoration: BoxDecoration(
                           color: isSelected
-                              ? Colors.deepPurple.withOpacity(0.12)
+                              ? Colors.deepPurple.withFixedOpacity(0.12)
                               : Colors.grey.shade100,
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(
